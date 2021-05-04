@@ -1,1 +1,15 @@
 
+3 Categories 
+1. Completely at Random Missing (MCAR)
+2. Missing values relate to observed data(MAR)
+3. Missing values reate to observed and unobsereved values(NMAR)
+Imputation 
+1. Complete case Analysis: Ignore the data point when we large dataset then we can easily remove the data point. criteria should be <5%. this is not iputation method
+2. Mean Mode and Median Imputation: Remove the value with these three. use fillNa()
+3. Regression Imputation: if there is Correlation between data points then we will use Simple Linear model or any other model. It will capture the general trend 
+4. KNN imputation: or a discrete variable, KNN imputer uses the most frequent value among the k nearest neighbours and, for a continuous variable, use the mean or mode.
+5. other Methods: Last observation carried forward. for time series we can use interpolation, Predictive Mean regression+KNN 
+6. Multiple Imputation: MICE algorithm google it.
+This methods applicable to MCAR and MAR problem
+For NMAR this methods wont work then we have to use Heckman's Selection Model
+
